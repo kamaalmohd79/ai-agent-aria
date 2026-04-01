@@ -1,0 +1,23 @@
+{
+  "name": "ai-agent-aria",
+  "version": "1.0.0",
+  "description": "LLM-powered AI agent with memory, built on Anthropic Claude",
+  "main": "agent/agent.js",
+  "scripts": {
+    "start": "node agent/agent.js",
+    "dev": "nodemon agent/agent.js",
+    "test": "node examples/test-agent.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
